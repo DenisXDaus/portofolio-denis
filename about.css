@@ -1,0 +1,123 @@
+.container {
+    max-width: 700px;
+    margin: 140px;
+    padding: 10px;
+  }
+  
+  .profile-picture img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+  }
+
+  h2 {
+    color: rgb(205, 255, 232);
+  }
+  
+  b {
+    color: rgb(26, 240, 76);
+  }
+
+  .user-info {
+    margin-top: 20px;
+    padding: 5px 0 20px 0;  
+    color: whitesmoke;  
+  }
+
+  .D-logo {
+    width: 100px;
+    height: 100px;
+    cursor: default;
+    background: linear-gradient(to bottom, rgb(105, 105, 105), rgb(0, 0, 0));
+    animation: gradient 5s infinite;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(14, 14, 14);
+
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: rgb(68, 60, 60);
+    text-decoration: none;
+    margin-right: 100px;
+    font-weight: 500;
+    transition: .3s;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.container {
+    background: linear-gradient(to bottom, #392b41, #7d5382);
+    animation: gradient 5s infinite;
+    border-radius: 2rem;
+    box-shadow: 0 0 20px rgb(132, 0, 255);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* responsive design */
+
+@media (max-width: 768px) {
+  .navigation a {
+    font-size: 1em;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation a {
+    font-size: 0.8em;
+    margin-right: 10px;
+  }
+}
+
+/* hover effect */
+
+.navigation a:hover {
+  color: goldenrod;
+  text-decoration: underline;
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+  z-index: 100;
+}
