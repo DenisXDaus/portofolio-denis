@@ -5,39 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Page</title>
   <link rel="stylesheet" href="about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <img class="D-logo" src="gambar\D1.png" alt="D-Logo">
+    <div class="logo-container">
+      <img class="D-logo" src="gambar/D1.png" alt="D-Logo">
+    </div>
+    <nav class="navigation">
+        <a href="index.html" class="menu">Beranda</a>
+        <a href="#about" class="about">About Me</a>
+        <a href="skill.html" class="skill">Skill</a>
+        <a href="contact.html" class="send">Contact Me</a>
+    </nav>
+  </header>
 
-        <nav class="navigation">
-            <a href="index.html" class="menu">Beranda</a>
-            <a href="#about" class="about">About Me</a>
-            <a href="skill.html" class="skill">Skill</a>
-            <a href="contact.html" class="send">Contact Me</a>
-        </nav>
-</header>
-      <div class="container">
-        <div class="profile-picture">
-          <img src="gambar/profil.jpeg" alt="Profile Picture">
-          <video autoplay loop muted class="video-background">
-            <source src="gambar/aboutbg.mp4" type="video/mp4">
-        </video>
-
-        </div>
-      <div class="user-info">
-          <h2>Welcome to About Page</h2>
-              <p>
-                Halo, Saya <b>Denis Firdaus</b>.
-                Saya adalah seorang <b>web developer</b> yang berasal dari Lampung. 
-                Saya sangat senang bekerja sama orang-orang yang ingin mengembangkan inovasi dan meningkatkan kinerja.
-              </p>
-        </div>
+  <section id="about" class="content">
+    <div class="container">
+      <div class="profile-picture">
+        <img src="gambar/profil.jpeg" alt="Profile Picture">
       </div>
+      <div class="user-info">
+        <h2>Welcome to About Page</h2>
+        <p>Halo, Saya <b>Denis Firdaus</b>, seorang <b>web developer</b> dari Lampung. Saya sangat senang bekerja dengan orang-orang untuk mengembangkan inovasi.</p>
+      </div>
+    </div>
+  </section>
 
-      <footer>
-        <p>&copy; 2024 Denis Firdaus. All Rights Reserved.</p>
-    </footer>
+  <section class="content">
+    <div class="container">
+      <div class="user-info">
+        <h2>Pengalaman</h2>
+        <ul class="experience-list">
+          <li>Membuat Game Construct 3</li>
+          <li>Membuat Game Javascript</li>
+          <li>Membuat Web HTML</li>
+          <li>Fotografer</li>
+          <li>Mendesain</li>
+          <li>Editing Video</li>
+          <li>Ikut OSIS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
+  <section class="content">
+    <div class="container">
+      <div class="user-info">
+        <h2>Riwayat Pendidikan</h2>
+        <p>Informasi pendidikan di sini.</p>
+        <ul class="experience-list">
+          <li>TK</li>
+          <li>SD</li>
+          <li>SMP</li>
+          <li>SMK</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Denis Firdaus. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
