@@ -61,17 +61,17 @@ span {
 }
 
 .beranda {
-    position: relative;
-    width: 100%;
-    height: 100vh;
     display: flex;
+    justify-content: space-between; /* Membuat elemen content dan foto berjauhan */
     align-items: center;
+    height: 100vh;
     padding: 30px 100px;
+    background-color: #f4f4f4; /* Menambahkan warna latar belakang */
 }
 
 .content {
     max-width: 500px;
-    color: rgb(255, 255, 255);
+    color: #333; /* Warna teks lebih gelap untuk keterbacaan */
 }
 
 .content h1 {
@@ -155,8 +155,19 @@ span {
     box-shadow: 0 5px 10px 5px rgb(190, 190, 190);
 }
 
-/* responsive display */
+.profile-photo {
+    max-width: 400px;
+    margin-left: 50px;
+}
 
+.profile-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Membuat foto lebih modern dengan sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan */
+}
+
+/* responsive display */
 @media screen and (max-width: 900px) {
     header {
         padding: 15px 50px;
@@ -170,9 +181,16 @@ span {
         margin-bottom: 20px;
     }
 
-    .beranda {
-        padding: 15px 50px;
+  .beranda {
+        flex-direction: column; /* Responsif untuk layar lebih kecil */
+        text-align: center;
     }
+
+    .profile-photo {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
 
     .content {
         max-width: 100%;
