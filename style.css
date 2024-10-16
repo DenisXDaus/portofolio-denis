@@ -1,207 +1,153 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap);
+     /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
+        .navigation a {
+            font-size: 1.1em;
+            color: #333;
+            text-decoration: none;
+            margin-right: 30px;
+            font-weight: 500;
+            transition: .3s;
+        }
 
-body {
-    
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: end;
-    min-height: 50vh;
-}
+        .navigation a:hover {
+            color: goldenrod;
+            text-decoration: underline;
+        }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
+        .D-logo {
+            width: 70px;
+            height: 70px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
 
-span {
-    color: goldenrod;
-}
+        /* Main Section Styling */
+        .beranda {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            padding: 100px 100px;
+            background-color: #f4f4f4;
+        }
 
-.navigation {
-    background: transparent;
-    backdrop-filter: blur(50px);
-    border-radius: 10px;
-}
+        .content {
+            max-width: 500px;
+        }
 
-.navigation a {
-    font-size: 1.1em;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    margin-right: 100px;
-    font-weight: 500;
-    transition: .3s;
-    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+        .content h1 {
+            font-size: 3rem;
+            color: #333;
+        }
 
-.navigation a:hover {
-    color: goldenrod;
-    text-decoration: underline;
-    transform: scale(1.1);
-    transform-origin: 50% 50%;
-    z-index: 100;
-}
+        .content h3 {
+            font-size: 1.8rem;
+            color: #777;
+        }
 
-.beranda {
-    display: flex;
-    justify-content: space-between; /* Membuat elemen content dan foto berjauhan */
-    align-items: center;
-    height: 100vh;
-    padding: 30px 100px;
-    background-color: #f4f4f4; /* Menambahkan warna latar belakang */
-}
+        .content p {
+            margin: 20px 0;
+            line-height: 1.6;
+            color: #555;
+        }
 
-.content {
-    max-width: 500px;
-    color: #333; /* Warna teks lebih gelap untuk keterbacaan */
-}
+        .grup-tombol a {
+            padding: 10px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
 
-.content h1 {
-    font-size: 2rem;
-}
+        .grup-tombol a:hover {
+            background-color: white;
+            color: #007bff;
+            border: 2px solid #007bff;
+        }
 
-.content h3 {
-    font-size: 1.5rem;
-    color: rgb(180, 180, 180);
-}
+        /* Foto Diri Styling */
+        .profile-photo {
+            max-width: 400px;
+            margin-left: 50px;
+        }
 
-.content p {
-    padding: 10px 0 40px 0;
-    line-height: 1.5;
-}
+        .profile-photo img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-.grup-tombol a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 40px;
-    background: goldenrod;
-    border-radius: 10px;
-    border: 2px solid goldenrod;
-    font-weight: 500;
-    transition: .3s;
-}
+        /* Sosial Media Icons */
+        .sosial-media {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
 
-.grup-tombol a:hover:nth-child(1) {
-    color: goldenrod;
-    background: transparent;
-}
+        .sosial-media a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #ddd;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 15px;
+            transition: 0.3s ease;
+        }
 
-.grup-tombol a:nth-child(2) {
-    color: goldenrod;
-    background: transparent;
-    margin-left: 30px;
-    padding: 10px 30px;
-}
+        .sosial-media a:hover {
+            background-color: goldenrod;
+        }
 
-.grup-tombol a:hover:nth-child(2) {
-    color: white;
-    background: goldenrod;
-}
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .beranda {
+                flex-direction: column;
+                text-align: center;
+            }
 
-/* posisi sosial media yang rapih */
+            .profile-photo {
+                margin-left: 0;
+                margin-top: 20px;
+            }
 
-.sosial-media {
-    position: fixed;
-    bottom: 100px;
-}
+            header {
+                padding: 20px;
+            }
 
-.sosial-media a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: transparent;
-    border-radius: 50%;
-    margin-right: 22px;
-    text-align: center;
-    line-height: 40px;
-    outline: 3px solid goldenrod;
-    transition: .3s;
-}
-
-.sosial-media a:hover {
-    transform: translateY(-5px);
-}
-
-.sosial-media a i {
-    color: rgb(68, 60, 60);
-    font-size: 20px;
-}
-
-.D-logo {
-    width: 100px;
-    height: 100px;
-    cursor: default;
-    background: transparent;
-    backdrop-filter: blur(50px);
-    border-radius: 50%;
-    box-shadow: 0 5px 10px 5px rgb(190, 190, 190);
-}
-
-.profile-photo {
-    max-width: 400px;
-    margin-left: 50px;
-}
-
-.profile-photo img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px; /* Membuat foto lebih modern dengan sudut melengkung */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan */
-}
-
-/* responsive display */
-@media screen and (max-width: 900px) {
-    header {
-        padding: 15px 50px;
-    }
-
-    .navigation {
-        flex-direction: column;
-    }
-
-    .navigation a {
-        margin-bottom: 20px;
-    }
-
-  .beranda {
-        flex-direction: column; /* Responsif untuk layar lebih kecil */
-        text-align: center;
-    }
-
-    .profile-photo {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-
-    .content {
-        max-width: 100%;
-    }
-
-    .grup-tombol a {
-        margin-left: 0;
-        padding: 5px 20px;
-    }
-
-    .sosial-media {
-        bottom: 300px;
-    }
-}
+            .navigation a {
+                margin-right: 10px;
+            }
+        }
