@@ -16,39 +16,50 @@
         }
 
         header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 20px 100px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.8);
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, 0.8); /* Transparansi sama dengan halaman utama */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        .navigation a {
-            font-size: 1.1em;
-            color: #333;
-            text-decoration: none;
-            margin-right: 30px;
-            font-weight: 500;
-            transition: .3s;
-        }
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
 
-        .navigation a:hover {
-            color: goldenrod;
-            text-decoration: underline;
-        }
+.navigation a {
+    font-size: 1.1em;
+    color: #333; /* Samakan warna teks dengan halaman utama */
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
 
-        .D-logo {
-            width: 70px;
-            height: 70px;
-            cursor: pointer;
-            border-radius: 50%;
-        }
+.navigation a:hover {
+    color: goldenrod; /* Efek hover sama dengan halaman utama */
+    text-decoration: underline;
+}
+
+.D-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.D-logo:hover {
+    transform: scale(1.2); /* Sama seperti halaman utama */
+}
 
         /* Main Section Styling */
         .beranda {
