@@ -12,6 +12,7 @@
 body {
     background-color: #e2e2e2;
     color: #333;
+    padding-top: 100px; /* Menambahkan padding top agar konten tidak menempel di navbar */
 }
 
 /* Header Styles */
@@ -21,12 +22,12 @@ header {
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: rgba(255, 255, 255, 0.8); /* Transparansi sama dengan halaman utama */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
-    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navigation {
@@ -67,7 +68,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50vh;
+    min-height: 80vh;
+    padding-top: 50px; /* Tambahkan jarak antara form dan navbar */
+    margin: 20px auto;
 }
 
 .container {
@@ -139,7 +142,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 /* Responsive Design */
@@ -148,13 +151,17 @@ footer {
         padding: 30px;
     }
 
-    .container {
-        padding: 20px;
+    header {
+        padding: 10px 20px; /* Menyesuaikan padding untuk layar kecil */
     }
 
     .navigation a {
-        margin: 0 10px;
-        font-size: 0.8em;
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+
+    .container {
+        padding: 20px;
     }
 }
 
