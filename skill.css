@@ -11,9 +11,12 @@
 /* Background Animation */
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #e2e2e2;
     color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* Navbar Styling - Sesuaikan dengan Style.css */
 header {
     position: fixed;
     top: 0;
@@ -146,5 +149,15 @@ footer {
     .D-logo {
         width: 50px;
         height: 50px;
+    }
+
+    .skills-section {
+        grid-template-columns: repeat(auto-fit, minmax(175px, 5fr));
+        gap: 30px;
+    }
+
+    .skill-card {
+        padding: 10px;
+        
     }
 }
