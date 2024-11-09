@@ -15,7 +15,7 @@
             min-height: 100vh;
         }
 
-        header {
+    header {
     position: fixed;
     top: 0;
     left: 0;
@@ -68,7 +68,7 @@
             align-items: center;
             height: 100vh;
             padding: 100px 100px;
-            background-color: #f4f4f4;
+            margin-top: 10px;
         }
 
         .content {
@@ -110,6 +110,7 @@
         .profile-photo {
             max-width: 400px;
             margin-left: 50px;
+            margin-top: 70px;
         }
 
         .profile-photo img {
