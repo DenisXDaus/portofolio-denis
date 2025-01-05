@@ -1,21 +1,21 @@
 @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap);
      /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
         }
 
-        body {
-          background-color: #f4f4f9;
-          margin: 0;
-          display: flex;
-          flex-direction: column;
-          min-height: 100vh;
-        }
+body {
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-    header {
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+        }
 
 .navigation {
     display: flex;
@@ -142,6 +142,86 @@
         .sosial-media a:hover {
             background-color: goldenrod;
         }
+
+        .testimonials, .fun-facts {
+            padding: 50px 100px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        
+        .testimonials h2, .fun-facts h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .testimonial-container, .facts-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        /* Styling Cards Umum */
+        .testimonial-card, .fact-card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .testimonial-card:hover, .fact-card:hover {
+            transform: scale(1.05);
+        }
+                
+        /* Testimonial Section */
+        .testimonial-card p {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .testimonial-card h4 {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        
+        /* Fun Facts Section */
+        .facts-container {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .fact-card {
+            text-align: center;
+        }
+        
+        .fact-card h3 {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        
+        .fact-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
 
         /* Responsif untuk layar kecil */
         @media (max-width: 768px) {
